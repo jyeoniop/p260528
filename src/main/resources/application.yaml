@@ -5,8 +5,9 @@ spring:
   application:
     name: p260527
   profiles:
-    active: dev
-    include: secret
+    group:
+      dev: "secret"
+      prod: "secret"
   web:
     resources:
       add-mappings: false
